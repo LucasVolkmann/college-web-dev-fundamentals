@@ -1,0 +1,73 @@
+/* Define como o conteúdo da página será exibido */
+.content {
+    padding: 5%;
+    height: 92vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    overflow-y: scroll;
+}
+
+/* Configurações para cada card de projeto */
+div.itemBox {
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+
+    background-color: white;
+    border-left: 8px solid orangered;
+    box-shadow: -5px 5px 25px rgba(0,0,0,0.25);
+}
+div.itemBox h1 {
+    text-align: center;
+    height: 20%;
+}
+.projectImage {
+    margin-top: 25px;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.itemBox:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    scale: 1.01;
+}
+
+/* Imagens dos cards */
+#img1 {
+    background-image: url("../images/boxShadow.PNG");
+}
+#img2 {
+    background-image: url("../images/starRater.PNG");
+}
+#img3 {
+    background-image: url("../images/theBall.PNG");
+}
+#img4 {
+    background-image: url("../images/localStorageExercice.PNG");
+}
+#img5 {
+    background-image: url("../images/taskListExercice.PNG");
+}
+
+/* Configurações para o aviso fixo sobre os códigos fonte */
+#alert {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+
+    border: 1px solid orangered;
+    border-radius: 3px;
+    font-size: large;
+
+    backdrop-filter: blur(5px);
+}
+#alert a {
+    color: orangered;
+}

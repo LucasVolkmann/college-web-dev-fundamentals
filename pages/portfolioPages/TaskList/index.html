@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex1</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="divForm">
+            <form >
+                <h1 for="input">Lista de tarefas</h1>
+                <input type="text" id="newTask" placeholder="Digite a tarefa">
+                <button onclick="addTask(event)">+</button>
+            </form>
+        </div>
+        <div class="list">
+            <h1>Tarefas</h1>
+            <ul id="tasklist">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

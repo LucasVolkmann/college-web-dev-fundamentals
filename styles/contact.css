@@ -1,0 +1,86 @@
+/* Define como o conteúdo da página será exibido */
+.content {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Configurações do formulário */
+#contactForm  {
+    width: 600px;
+    height: 80%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    border: 1px solid rgb(205, 205, 205);
+    padding: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#contactForm h1 {
+    width: 100%;
+    text-align: center;
+}
+/* Configurações das caixas de texto */
+#contactForm input[type=text],input[type=e-mail] {
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px solid orangered;
+}
+#contactForm input[type=text]:focus {
+    transition: 0.5s;
+    border-color: orangered;
+    box-shadow: inset 0px 0px 2px orangered;
+}
+#contactForm input[type=e-mail]:focus {
+    transition: 0.5s;
+    border-color: orangered;
+    box-shadow: inset 0px 0px 2px orangered;
+}
+/* Configurações da caixa de texto maior */
+#contactForm textarea {
+    width: 350px;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    border-left: 3px solid orangered;
+}
+#contactForm textarea:focus {
+    transition: 0.5s;
+    border-color: orangered;
+    box-shadow: inset 0px 0px 2px orangered;
+}
+#contactForm textarea {
+    resize: none;
+}
+/* Configurações do botão */
+#contactForm input[type=button] {
+    width: 350px;
+    height: 45px;
+    background-color: rgba(255, 69, 0, 0.5);
+    border: 1px solid rgb(255, 69, 0);
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(0,0,0, 0.2);
+    font-size: 18px;
+    font-weight: bold;
+}
+#contactForm input[type=button]:hover {
+    background-color: rgba(255, 69, 0, 0.45);
+    scale: 1.005;
+}
+
+#contactForm input[type=button]:active {
+    transition: 0.1s;
+    scale: 0.985;
+    border-color: darkgray;
+    box-shadow: none;
+}
+/* Configurações gerais */
+#contactForm input, textarea {
+    outline: none;
+}
